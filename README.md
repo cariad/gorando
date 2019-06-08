@@ -1,5 +1,7 @@
 # gorando
 
+[![Build Status](https://travis-ci.org/cariad/gorando.svg?branch=master)](https://travis-ci.org/cariad/gorando)
+
 A golang package for dealing with randomness.
 
 There are many packages like it, but this one is mine.
