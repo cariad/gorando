@@ -1,5 +1,7 @@
 # gorando
 
+[![CircleCI](https://circleci.com/gh/cariad/gorando.svg?style=svg)](https://circleci.com/gh/cariad/gorando)
+
 A golang package for dealing with randomness.
 
 There are many packages like it, but this one is mine.
