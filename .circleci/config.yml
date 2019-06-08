@@ -8,13 +8,17 @@ jobs:
     steps:
       - checkout
 
+      - run: mkdir -p /tmp/test-results
+
       - restore_cache:
           keys:
             - v1-pkg-cache
 
+      - run: go get github.com/jstemmer/go-junit-report
+
       - run:
           name: Run unit tests
-          command: go test -cover > /tmp/test-results.out
+          command: go test -v 2>&1 | go-junit-report > /tmp/test-results/report.xml
 
       - save_cache:
           key: v1-pkg-cache
@@ -22,8 +26,8 @@ jobs:
             - /go/pkg
 
       - store_artifacts:
-          path: /tmp/test-results.out
+          path: /tmp/test-results
           destination: raw-test-output
 
       - store_test_results:
-          path: /tmp/test-results.out
+          path: /tmp/test-results
