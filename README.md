@@ -44,7 +44,7 @@ func main() {
 }
 ```
 
-For quick access to common types of pool, there are `LowerAlphabet`, `UpperAlphabet` and `Digits` constants:
+For quick access to common types of pool, there are `LowerAlpha`, `UpperAlpha` and `Digits` constants:
 
 ```go
 package main
@@ -55,16 +55,16 @@ import (
 )
 
 func main() {
-    onlyLowerAlphabet, _ := gorando.GetString(gorando.LowerAlphabet, 8)
-    fmt.Println(onlyLowerAlphabet)
+    onlyLowerAlpha, _ := gorando.GetString(gorando.LowerAlpha, 8)
+    fmt.Println(onlyLowerAlpha)
     // lnosdvql
 
-    onlyAlphabet, _ := gorando.GetString(gorando.LowerAlphabet + gorando.UpperAlphabet, 8)
-    fmt.Println(onlyAlphabet)
+    onlyAlpha, _ := gorando.GetString(gorando.LowerAlpha + gorando.UpperAlpha, 8)
+    fmt.Println(onlyAlpha)
     // uvYJfgwU
 
-    onlyAlphaNumeric, _ := gorando.GetString(gorando.LowerAlphabet + gorando.UpperAlphabet + gorando.Digits, 8)
-    fmt.Println(onlyAlphaNumeric)
+    onlyAlphaNum, _ := gorando.GetString(gorando.LowerAlpha + gorando.UpperAlpha + gorando.Digits, 8)
+    fmt.Println(onlyAlphaNum)
     // 4Pz453II
 }
 ```
@@ -85,9 +85,9 @@ func GetString(pool string, length int) (string, error)
 
 ## Constants
 
-`LowerAlphabet` is a string containing all the characters in the English alphabet in lower-case form.
+`LowerAlpha` is a string containing all the characters in the English alphabet in lower-case form.
 
-`UpperAlphabet` is a string containing all the characters in the English alphabet in upper-case form.
+`UpperAlpha` is a string containing all the characters in the English alphabet in upper-case form.
 
 `Digits` is a string containing all the base-10 digits.
 
