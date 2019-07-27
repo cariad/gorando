@@ -8,5 +8,5 @@ const LowerAlphabet = "abcdefghijklmnopqrstuvwxyz"
 // alphabet in lower-case form.
 const UpperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-// Digit is a string containing all the base-10 digits.
-const Digit = "0123456789"
+// Digits is a string containing all the base-10 digits.
+const Digits = "0123456789"
