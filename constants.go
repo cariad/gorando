@@ -5,7 +5,7 @@ package gorando
 const LowerAlphabet = "abcdefghijklmnopqrstuvwxyz"
 
 // UpperAlphabet is a string containing all the characters in the English
-// alphabet in lower-case form.
+// alphabet in upper-case form.
 const UpperAlphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 // Digits is a string containing all the base-10 digits.
